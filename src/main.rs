@@ -60,7 +60,7 @@ fn sum_line_number(lines: &Vec<&str>) -> Vec<i32> {
             temp_string.push(char_vector[0]);
             temp_string.push(char_vector[0]);
         }
-        let number = temp_string.parse::<i32>().expect("Unable to do so");
+        let number = temp_string.parse::<i32>().unwrap();
         result_vec.push(number);
     }
 
